@@ -1,0 +1,24 @@
+Docker install with Linux OS
+ 
+Docker pull command for ubuntu image
+docker pull ubuntu:latest
+Docker Run Command
+docker run -t -d --name=UB_NEw --hostname=Ubuntu_New 58db3edaf2be /bin/bash
+Docker start command
+docker start UB_NEw
+Login to the new server
+docker exec -it UB_NEw bash
+Ubuntu upgrade command for dependency
+apt update
+Installation of curl command
+apt install curl -y
+Getting Percona MySQL Repo file from online
+curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
+gnupg2 dependency install
+apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb -y
+Repo for Percona will get upgrde
+apt update
+Choosing the version of MySQL need to install
+percona-release setup ps80
+Installation of Percona MySQL
+apt install percona-server-server -y
