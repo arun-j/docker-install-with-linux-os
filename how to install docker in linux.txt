@@ -23,3 +23,12 @@ Choosing the version of MySQL need to install
 percona-release setup ps80
 Installation of Percona MySQL
 apt install percona-server-server -y
+
+Checking the status of MySQL Service
+service  mysql status
+ 
+Starting the MySQL
+service  mysql start
+  
+if the mysql  not started then
+service mysql restart   
